@@ -8,7 +8,11 @@ const language=
 //undefined data types
 
 
-
+//To check output we use console.log in commebts
+console.log(isisland);
+console.log(country);
+console.log(population);
+console.log(language);
 
 //to check what the type we use typeof
 console.log(typeof isisland);
