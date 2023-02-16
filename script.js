@@ -55,10 +55,10 @@ console.log(descriptionone)
 
 //if condition
 if(population>33){
-    console.log( country + ' population is above average');
+    console.log( `${country} population is above average`);
 }
 else{
-    console.log(country + ' population is below average')
+    console.log(`${country}population is below average`)
 }
 //if else for bmi
 if(markbmi>johnbmi){
