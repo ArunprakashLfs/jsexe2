@@ -62,10 +62,10 @@ else{
 }
 //if else for bmi
 if(markbmi>johnbmi){
-    console.log("Marks Bmi higher than johns");
+    console.log(`Marks Bmi(${markbmi}) higher than johns( ${johnbmi} )`);
 }
 else if (johnbmi>markbmi){
-    console.log("JOHNs Bmi higher then markbmi");
+    console.log(`JOHNs Bmi(${johnbmi}) higher then Markbmi(${markbmi})`);
 }
 else{
     console.log("BOth equal bmi")
