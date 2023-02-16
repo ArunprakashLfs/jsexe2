@@ -51,7 +51,7 @@ console.log(markhigherbmi=(markbmi>johnbmi));
 //template literals using=`$()`
 const descriptionone=`${country} is in ${continent}, and its
 ${population} million people speak ${language}`;
-console.log(descriptionone)
+console.log(descriptionone);
 
 //if condition
 if(population>33){
