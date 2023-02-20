@@ -147,3 +147,23 @@ switch (language) {
     default:console.log(`${language} not in top5`)
         break;
 }
+//ternary operator {condition?true:false}execution
+console.log(`${country}'s population is ${population > 33 ? 'above' : 'below'} average`,);
+
+//challenge 4
+let bills=230;
+
+if (bills>50 && bills<=300){
+    const  tips =(bills*0.15)
+    const totalbill= bills+(bills*(15/100));
+    console.log(`your bill was ${bills} and with tips ${tips} and total bill value ${totalbill}`);
+}
+else{
+    const tips =(bills*0.20)
+    const totalbill= bills+(bills*(20/100));
+    console.log(`your bill was ${bills} and with tips ${tips} and total bill value ${totalbill}`)
+}
+// using tenary
+const bill = 230;
+const tip = bill <= 300 && bill >= 50 ? bill * 0.15 : bill * 0.2;
+console.log(`The bill was ${bill}, the tip was ${tip}, and the total value ${bill + tip}`);
