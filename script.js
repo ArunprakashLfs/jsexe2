@@ -3,7 +3,7 @@ const isisland=false;
 const country="india";
 const continent="asia";
 //To Check the string
-let population=150 ;
+let population= 150 ;
 //number data types
 const language="tamil";
 //undefined data types
@@ -90,15 +90,60 @@ console.log(5 + 6 + '4' + 9 - 4 - 2);
 
 
 //TOPIC:-  Equality Operators
-const numNeighbours = prompt('How many neighbour countries does your country have?',);
+//const numNeighboursInput = prompt('How many neighbour countries does your country have?',);
     // LATER : This helps us prevent bugs
-const numNeighbours  = Number( prompt('How many neighbour countries does your country have'),);
-if (numNeighbours===1){
-
+/*const numNeighbours = Number(prompt('How many neighbour countries does your countryhave?'),);
+if (numNeighbours === 1) {
+    console.log('Only 1 border!');
 }
-else if (numNeighbours>1){
-    console.log("More than one border");
+else if (numNeighbours > 1) {
+    console.log('More than 1 border');
+} 
+else {
+    console.log('No borders');
+}
+*/
+
+if (language === 'english' && population < 50 && !isIsland)
+{
+console.log(`You should live in ${country} :)`);
+}
+else {
+console.log(`${country} does not meet your criteria :(`);
+}
+
+//two teams winning rate
+/*const dolphinswinnings =(99+100+10) /3;
+const kolaswinnings =(103+106+103) /3;
+
+if(dolphinswinnings>kolaswinnings && dolphinswinnings>=100){
+    console.log(`dolphins ${dolphinswinnings} are winners`);
+}
+else if(dolphinswinnings<kolaswinnings && kolaswinnings>=100){
+    console.log(`kolas ${kolaswinnings}are winners`);
+}
+else if(dolphinswinnings===kolaswinnings){
+    console.log("match draw")
 }
 else{
-    console.log("No Borders")
+    console.log("no teams wins the trophy")
+}*/
+
+//switch statements
+switch (language) {
+    case 'Mandarin':
+        console.log('MOST number of native speakers!')
+    
+        break;
+    case 'Spanish':
+        console.log("2nd place")
+    
+        break;
+    case 'English':
+        console.log("3rd place")
+    
+        break;
+
+    default:console.log(`${language} not in top5`)
+        break;
 }
