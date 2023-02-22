@@ -113,7 +113,7 @@ console.log(`${country} does not meet your criteria :(`);
 }
 
 //two teams winning rate
-/*const dolphinswinnings =(99+100+10) /3;
+const dolphinswinnings =(99+100+10) /3;
 const kolaswinnings =(103+106+103) /3;
 
 if(dolphinswinnings>kolaswinnings && dolphinswinnings>=100){
@@ -127,10 +127,10 @@ else if(dolphinswinnings===kolaswinnings){
 }
 else{
     console.log("no teams wins the trophy")
-}*/
+}
 
 //switch statements
-switch (language) {
+/*switch (language) {
     case 'Mandarin':
         console.log('MOST number of native speakers!')
     
@@ -167,3 +167,64 @@ else{
 const bill = 230;
 const tip = bill <= 300 && bill >= 50 ? bill * 0.15 : bill * 0.2;
 console.log(`The bill was ${bill}, the tip was ${tip}, and the total value ${bill + tip}`);
+
+
+//Functions
+
+function descripeCountry(country, population, capitalCity) {
+    console.log(`${country} has ${population} people and its capital city is ${capitalCity}`);
+}
+descripeCountry("finland", "6million", "helsinki");
+descripeCountry("india", "1.4billion", "delhi");
+descripeCountry("usa","240Million", "Wasinktondc");
+
+//Function declaration
+function percentageOfWorld1(population) {
+    return (population / 7900) * 100;
+    }
+    const percentageOfWorld2 = function (population) {
+    return (population / 7900) * 100;
+    };
+    const percIndia1 = percentageOfWorld1(1400);
+    const percChina1 = percentageOfWorld1(1441);
+    const percUSA1 = percentageOfWorld1(332);
+    console.log(percIndia1.toFixed(2) , percChina1.toFixed(2), percUSA1.toFixed(2));
+
+//Arrow function
+ const percentageOfWorld3 = population => ((population/7900)*100)
+ const percIndia3 = percentageOfWorld3(1500);
+ const percChina3 = percentageOfWorld3(1440);
+ const percRussia3 = percentageOfWorld3(220);
+ console.log(`India population percentage ${percIndia3.toFixed(1)}`);
+ console.log(`China population percentage ${percChina3.toFixed(1)}`);
+ console.log(`Russia population percentage ${percRussia3.toFixed(1)}`);
+
+//function calling other function
+const describePopulation = function (country, population){
+    const percentage= percentageOfWorld1(population);
+    const description= `${country} has the population ${population} of the ${percentage} of world`;
+    console.log(description);
+}
+describePopulation("india", 140);*/
+
+//coding challenge 5
+const calcAverage= (score1, score2, score3) => ((score1+score2+score3)/3);
+const avgDolphins=(calcAverage(12, 14,12));
+const avgKolas=(calcAverage(85, 60, 22))
+console.log(avgDolphins);
+console.log(avgKolas);
+function checkWinners(avgDolphins, avgKolas){
+    if ((avgKolas*2)<=avgDolphins){
+        console.log("Dolphin Wins")
+    }else if ((avgDolphins*2)<=avgKolas) {
+        
+        console.log("kola wins")
+    }
+    else{
+        console.log("No Result")
+    }
+}
+checkWinners(avgDolphins,avgKolas);
+
+
+
