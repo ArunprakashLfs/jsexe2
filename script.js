@@ -22,13 +22,13 @@ console.log(typeof population);
 console.log(typeof language);*/
 
 //to check population in half
-/*console.log(population/2);
+console.log(population/2);
 population++;
 console.log(population);
 console.log(population>6);
 console.log(population<33);
 const description=country +''+ "is in" +  "" + continent + "and its" + "" + "" + population+ "million speaks "+ language;
-console.log(description);*/
+console.log(description);
 //the excersise one
 //problem solving
 //1.understand problem
@@ -130,7 +130,7 @@ else{
 }
 
 //switch statements
-/*switch (language) {
+switch (language) {
     case 'Mandarin':
         console.log('MOST number of native speakers!')
     
@@ -205,7 +205,7 @@ const describePopulation = function (country, population){
     const description= `${country} has the population ${population} of the ${percentage} of world`;
     console.log(description);
 }
-describePopulation("india", 140);*/
+describePopulation("india", 140);
 
 //coding challenge 5
 const calcAverage= (score1, score2, score3) => ((score1+score2+score3)/3);
@@ -226,5 +226,14 @@ function checkWinners(avgDolphins, avgKolas){
 }
 checkWinners(avgDolphins,avgKolas);
 
-
+//Arrays
+const populations=[10, 140, 220, 240]
+console.log(populations.length === 4);
+const percentages = [
+percentageOfWorld1(populations[0]),
+percentageOfWorld1(populations[1]),
+percentageOfWorld1(populations[2]),
+percentageOfWorld1(populations[3])
+];
+console.log(percentages);
 
