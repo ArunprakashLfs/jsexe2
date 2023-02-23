@@ -247,19 +247,6 @@ neighbourCountry[neighbourCountry.indexOf('china')] = 'Republic of china';
 console.log(neighbourCountry);
 
 //Coding Challenge #6
-
-let billl=230;
-
-if (billl>50 && billl<=300){
-    const  tips =(billl*0.15)
-    const totalbill= billl+(billl*(15/100));
-    console.log(`your bill was ${billl} and with tips ${tips} and total bill value ${totalbill}`);
-}
-else{
-    const tips =(billl*0.20)
-    const totalbill= billl+(billl*(20/100));
-    console.log(`your bill was ${billl} and with tips ${tips} and total bill value ${totalbill}`);
-}
  
 //using tip for array
 function calcTip(bill) {
