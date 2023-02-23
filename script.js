@@ -151,7 +151,7 @@ switch (language) {
 console.log(`${country}'s population is ${population > 33 ? 'above' : 'below'} average`,);
 
 //challenge 4
-let bills=230;
+/*let bills=230;
 
 if (bills>50 && bills<=300){
     const  tips =(bills*0.15)
@@ -162,7 +162,7 @@ else{
     const tips =(bills*0.20)
     const totalbill= bills+(bills*(20/100));
     console.log(`your bill was ${bills} and with tips ${tips} and total bill value ${totalbill}`)
-}
+}*/
 // using tenary
 const bill = 230;
 const tip = bill <= 300 && bill >= 50 ? bill * 0.15 : bill * 0.2;
@@ -209,16 +209,16 @@ describePopulation("india", 140);
 
 //coding challenge 5
 const calcAverage= (score1, score2, score3) => ((score1+score2+score3)/3);
-const avgDolphins=(calcAverage(12, 14,12));
-const avgKolas=(calcAverage(85, 60, 22))
+const avgDolphins=(calcAverage(12, 114,12));
+const avgKolas=(calcAverage(8, 6, 22))
 console.log(avgDolphins);
 console.log(avgKolas);
 function checkWinners(avgDolphins, avgKolas){
     if ((avgKolas*2)<=avgDolphins){
-        console.log("Dolphin Wins")
+        console.log(`Dolphin Wins ${avgDolphins}`)
     }else if ((avgDolphins*2)<=avgKolas) {
         
-        console.log("kola wins")
+        console.log(`kola wins ${avgKolas}`)
     }
     else{
         console.log("No Result")
@@ -249,8 +249,48 @@ console.log(neighbourCountry);
 //Coding Challenge #6
  
 //using tip for array
-function calcTip(bill) {
-    return (bill+(bill*0.15));   
+/*function calcTip(bill) {
+    if (bill>=50 && bill<=350) {
+        return (bill+(bill*0.15));
+    }else{
+        return(bill+(bill*0,20));
+    }
+       
 }
-const bill1=calcTip(100);
-console.log(bill1);
+const bill1=calcTip(125);
+const bill2=calcTip(555);
+const bill3=calcTip(44)
+console.log(bill1, bill2, bill3);*/
+const calcTip = function (bill) {
+    return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
+  };
+const bills = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
+const tips = [];
+const totals = [];
+for (let i = 0; i < bills.length; i++) {
+  const tip = calcTip(bills[i]);
+  tips.push(tip);
+  totals.push(tip + bills[i]);
+}
+console.log(bills, tips, totals);
+
+//objects
+const myCountry={
+    country: 'India',
+    capital: 'Delhi',
+    language: ['Hindi','Tamil', 'Telugu'],
+    population: 1400,
+    neighbours:['china', 'pakistan', 'srilanka', 'bangladesh'],
+    describe: function () {
+        console.log(`${this.country} has ${this.population} million ${this.language}-speaking people, ${this.neighbours.length} neighbouring countries and a capital called ${this.capital}.`);
+    }
+
+}
+myCountry.describe()
+console.log(describe)
+// console.log(myCountry.capital);
+// console.log(` ${myCountry.country} has ${myCountry.population} million ${myCountry.language}speaking people, ${myCountry.neighbours.length} neighbouring countriesand a capital called ${myCountry.capital}`); 
+// myCountry.population=(myCountry.population+2);
+// console.log(myCountry.population);
+// myCountry[`population`] -= 2;
+// console.log(myCountry.population);
